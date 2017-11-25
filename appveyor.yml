@@ -1,0 +1,11 @@
+image: Visual Studio 2017
+configuration: Release
+platform: x86
+before_build:
+- cmd: nuget restore
+build:
+  verbosity: minimal
+artifacts:
+- path: \Release\repacker_ice\*
+  name: repacker_ice.$(GitVersion_LegacySemVerPadded)
+  type: zip

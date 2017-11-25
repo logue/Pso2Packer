@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\ice">
+      <UniqueIdentifier>{0f8f1962-292e-49ae-95d6-68df79b6c2f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ice">
+      <UniqueIdentifier>{b04c5554-0d9e-4026-ac81-109d7ff9130e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="IProgressMonitor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportMacro.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="NullProgressMonitor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="IceResource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="IObject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="IResource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="IResourceSet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\repacker_ice\clBlowFish.h">
+      <Filter>ヘッダー ファイル\ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\repacker_ice\clCompress.h">
+      <Filter>ヘッダー ファイル\ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\repacker_ice\clCRC.h">
+      <Filter>ヘッダー ファイル\ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\repacker_ice\clICE.h">
+      <Filter>ヘッダー ファイル\ice</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="IceResource.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="NullProgressMonitor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repacker_ice\clBlowFish.cpp">
+      <Filter>ソース ファイル\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repacker_ice\clCompress.cpp">
+      <Filter>ソース ファイル\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repacker_ice\clCRC.cpp">
+      <Filter>ソース ファイル\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repacker_ice\clICE.cpp">
+      <Filter>ソース ファイル\ice</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

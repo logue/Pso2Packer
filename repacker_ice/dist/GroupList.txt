@@ -1,0 +1,59 @@
+// このテキストファイルに書かれたファイル名や拡張子は全てグループ1に分類されます。
+// Filenames and extensions written in this text file are all group 1.
+//
+// それ以外のファイルはグループ2に分類されます。
+// Other files go to group 2.
+
+// 拡張子は「.」も含めて指定してください。
+// Include "." in the file extension.
+.acb
+.bti
+.cml
+.cmo
+.cmp
+.cms
+.cmt
+.cmx
+.crbp
+.crc
+.emi
+.evt
+.fig
+.flte
+.ini
+.lat
+.light
+.lua
+.lve
+.mus
+.pha
+.phi
+.pgd
+.prm
+.rgn
+.sib
+.skit
+.snd
+.trm
+.trn
+
+// ファイル名を指定することもできます。
+// You can also specify a filename.
+oxyresource.crc
+.wtr
+
+
+//←この文字でコメントアウトできます。
+// <--You can comment out by this character.
+; ←この文字でもコメントアウトできます。
+;  <--You can comment out by this character.
+  ←半角スペースもコメントアウトになります。
+  <--You can comment out by this character.(One-byte space)
+	←タブ文字もコメントアウトになります。
+	<--You can comment out by this character.(Tab character)
+
+// ファイル名の末尾から比較しているのでresource.crcと書いても
+// oxyresource.crcがヒットし、グループ1に分類されます。
+// Comparing from the end of filename. 
+// Even if you write "resource.crc", 
+// "oxyresource.crc" hits and it is classified as group 1.
