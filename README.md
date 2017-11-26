@@ -11,7 +11,7 @@ PSO2のクライアントで読み込めるICE形式のファイルを、開い�
 |repacker_ice   |オリジナルのソースコード（ネットから拾った）
 |IceResource    |ICE形式のファイルをやり取りするためのコアDLL（の予定）
 |IceResource.net|上記のDLLを.netから使用するためのラッパーDLL（の予定）
-|IceBrowser     |[MabiPacker](../../MabiPack)のPackViewerの移植（の予定）
+|IceBrowser     |のPackViewerの移植（の予定）
 
 ## Contribution
 
@@ -23,6 +23,6 @@ PSO2のクライアントで読み込めるICE形式のファイルを、開い�
 
 ## ライセンス
 
-販売するアホがいるのでMITじゃなくGPL
+販売するアホがいるのでGPLというわけじゃなく、流用元の[MabiPacker](https://github.com/logue/MabiPack)のライセンスがGPLなため。
 
 [GPL3](LICENSE)

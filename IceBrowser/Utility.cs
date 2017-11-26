@@ -12,13 +12,22 @@ namespace IceBrowser {
             return :MarshalAs (UnmanagedType.Bool)
         ]
         public static extern bool DeleteObject ([In] IntPtr hObject);
-
+        /// <summary>
+        /// Bitmap Image to ImageSource Conversion
+        /// </summary>
+        /// <param name="bmp">Bitmap</param>
+        /// <returns>ImageSource</returns>
+        /// <see cref="http://www.nuits.jp/entry/2016/10/17/181232"/>
         public static ImageSource ToImageSource (this Bitmap bmp) {
             var handle = bmp.GetHbitmap ();
             try {
                 return System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap (handle, IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions ());
             } finally { DeleteObject (handle); }
         }
+        /// <summary>
+        /// Sound Player by winmm.dll
+        /// </summary>
+        /// <see cref="http://dobon.net/vb/dotnet/programing/playembeddedwave.html"/>
         public class WavePlayer {
             public enum PlaySoundFlags : int {
                     SND_SYNC = 0x0000,
@@ -44,7 +53,6 @@ namespace IceBrowser {
             /// Playing sound via winmm.dll
             /// </summary>
             /// <param name="buffer">Byte array containing wave data</param>
-            // http://dobon.net/vb/dotnet/programing/playembeddedwave.html
             public WavePlayer (byte[] buffer) {
                 waveBuffer = buffer;
                 gcHandle = GCHandle.Alloc (

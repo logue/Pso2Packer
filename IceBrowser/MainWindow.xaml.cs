@@ -18,30 +18,20 @@ namespace IceBrowser {
     /// </summary>
     public partial class MainWindow : MetroWindow {
         private Utility.WavePlayer wave;
-        private IceResourceSet m_Pack;
-        private IceResource Res;
+        //private IceResourceSet m_Pack;
+        //private IceResource Res;
 
         public MainWindow () {
             InitializeComponent ();
         }
         /***********************************************************************************************/
-        private void UnpackById (uint id) {
-            Res = m_Pack.GetFileByIndex (id);
-            if (Res != null) {
 
-            }
-        }
-        private void UnpackByName (string name) {
-            Res = m_Pack.GetFileByName (name);
-            if (Res != null) {
-
-            }
-        }
         /// <summary>
         /// プレビューを表示
         /// </summary>
         /// <param name="id"></param>
         private void PreviewById (uint id) {
+            /*
             PackResource Res = m_Pack.GetFileByIndex (id);
             Status.Content = "Now Loading...";
             if (Res != null) {
@@ -110,8 +100,8 @@ namespace IceBrowser {
                         break;
                 }
             }
+            */
         }
-
     }
     public class Model_TreeViewItem : TreeViewItem {
         public DirectoryInfo _Directory { get; set; }
