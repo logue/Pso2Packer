@@ -9,6 +9,7 @@ namespace IceBrowser {
         public List<Model_TreeViewItem> VM { get; }
         public MainWindowViewModel () {
             VM = new List<Model_TreeViewItem> () {
+
                 new Model_TreeViewItem (@"C:\Users\yoshiki\Desktop\てすと")
             };
         }

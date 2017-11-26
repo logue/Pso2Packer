@@ -2,23 +2,43 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
     xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls" 
+    xmlns:Control="clr-namespace:WPFHexaEditor.Control;assembly=WPFHexaEditor.Control" 
     xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks" GlowBrush="{StaticResource AccentColorBrush}" NonActiveGlowBrush="{StaticResource ControlsValidationBrush}" ShowIconOnTitleBar="True" Title="IceBrowser" Height="350" Width="525">
     <Controls:MetroWindow.RightWindowCommands>
         <Controls:WindowCommands ShowLastSeparator="False">
-            <Button Content="About"/>
-            <Button Content="Open"/>
-            <Button Content="Export"/>
+            <Button x:Name="Button_About">
+                <StackPanel Orientation="Horizontal">
+                    <iconPacks:PackIconFontAwesome Kind="Comment" />
+                    <TextBlock>About</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button_Open">
+                <StackPanel Orientation="Horizontal">
+                    <iconPacks:PackIconFontAwesome Kind="FolderOutlinepenOutline" />
+                    <TextBlock>Open</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button_Export">
+                <StackPanel Orientation="Horizontal">
+                    <iconPacks:PackIconFontAwesome Kind="Download" />
+                    <TextBlock>Export</TextBlock>
+                </StackPanel>
+            </Button>
         </Controls:WindowCommands>
     </Controls:MetroWindow.RightWindowCommands>
     <DockPanel>
         <StatusBar DockPanel.Dock="Bottom">
-            <StatusBarItem>Status</StatusBarItem>
+            <StatusBarItem x:Name="Status">Status</StatusBarItem>
         </StatusBar>
-        <TreeView DockPanel.Dock="Left" MinWidth="150"></TreeView>
-        <StackPanel DockPanel.Dock="Right">
+        <TreeView DockPanel.Dock="Left" MinWidth="150" ItemsSource="{Binding VM}" BorderBrush="{StaticResource ResourceKey=AccentColorBrush2}" BorderThickness="0,0,1,0"></TreeView>
+        <WrapPanel DockPanel.Dock="Right" VerticalAlignment="Center" HorizontalAlignment="Center">
             <StackPanel x:Name="PicturePanel">
                 <Image x:Name="PictureView"/>
             </StackPanel>
-        </StackPanel>
+            <Button x:Name="SoundView" Style="{DynamicResource MahApps.Metro.Styles.MetroCircleButtonStyle}" Width="64" Height="64">
+                <iconPacks:PackIconFontAwesome Kind="Play" Width="36" Height="36"/>
+            </Button>
+            <TextBlock x:Name="TextView"/>
+        </WrapPanel>
     </DockPanel>
 </Controls:MetroWindow>

@@ -361,7 +361,7 @@ namespace S16.Drawing {
             mul = 1;
             shift2 = 0;
             while ((mask & 1) == 0) {
-                mask >> = 1;
+                mask >>= 1;
                 shift1++;
             }
             uint bc = 0;
@@ -371,7 +371,7 @@ namespace S16.Drawing {
             mask *= (uint) mul;
 
             while ((mask & ~0xff) != 0) {
-                mask >> = 1;
+                mask >>= 1;
                 shift2++;
             }
         }
@@ -427,14 +427,14 @@ namespace S16.Drawing {
             }
 
             temp = mask;
-            for (i = 0; i < 32; i++, temp >> = 1) {
+            for (i = 0; i < 32; i++, temp >>= 1) {
                 if ((temp & 1) != 0)
                     break;
             }
             shiftRight = i;
 
             // Temp is preserved, so use it again:
-            for (i = 0; i < 8; i++, temp >> = 1) {
+            for (i = 0; i < 8; i++, temp >>= 1) {
                 if ((temp & 1) == 0)
                     break;
             }
@@ -446,7 +446,7 @@ namespace S16.Drawing {
             uint i, testBit = 0x01, count = 0;
             bool foundBit = false;
 
-            for (i = 0; i < 32; i++, testBit << = 1) {
+            for (i = 0; i < 32; i++, testBit <<= 1) {
                 if ((mask & testBit) != 0) {
                     if (!foundBit)
                         foundBit = true;
@@ -474,7 +474,7 @@ namespace S16.Drawing {
                     // Denormalized number -- renormalize it
                     //
                     while ((m & 0x00000400) == 0) {
-                        m << = 1;
+                        m <<= 1;
                         e -= 1;
                     }
 
@@ -766,7 +766,7 @@ namespace S16.Drawing {
                                         rawData[offset] = (byte) (word & 0x0F);
                                         rawData[offset] = (byte) (rawData[offset] | (rawData[offset] << 4));
                                     }
-                                    word >> = 4;
+                                    word >>= 4;
                                 }
                             }
                         }
@@ -883,7 +883,7 @@ namespace S16.Drawing {
                                         uint offset = (uint) (z * sizeofplane + (y + j) * bps + (x + i) * bpp + 3);
                                         rawData[offset] = (byte) alphas[bits & 0x07];
                                     }
-                                    bits >> = 3;
+                                    bits >>= 3;
                                 }
                             }
 
@@ -897,7 +897,7 @@ namespace S16.Drawing {
                                         uint offset = (uint) (z * sizeofplane + (y + j) * bps + (x + i) * bpp + 3);
                                         rawData[offset] = (byte) alphas[bits & 0x07];
                                     }
-                                    bits >> = 3;
+                                    bits >>= 3;
                                 }
                             }
                         }
@@ -1082,8 +1082,8 @@ namespace S16.Drawing {
                                                 else
                                                     rawData[t1 + 2] = 0x7F;
                                             }
-                                            bitmask >> = 3;
-                                            bitmask2 >> = 3;
+                                            bitmask >>= 3;
+                                            bitmask2 >>= 3;
                                         }
                                         currentOffset += bps;
                                     }
@@ -1149,7 +1149,7 @@ namespace S16.Drawing {
                                                 t1 = (int) (currOffset + (x + i));
                                                 rawData[t1] = colours[bitmask & 0x07];
                                             }
-                                            bitmask >> = 3;
+                                            bitmask >>= 3;
                                         }
                                         currOffset += (uint) bps;
                                     }
@@ -1302,7 +1302,7 @@ namespace S16.Drawing {
                                         uint offset = (uint) (z * sizeofplane + (y + j) * bps + (x + i) * bpp + 3);
                                         rawData[offset] = alphas[bits & 0x07];
                                     }
-                                    bits >> = 3;
+                                    bits >>= 3;
                                 }
                             }
 
@@ -1315,7 +1315,7 @@ namespace S16.Drawing {
                                         uint offset = (uint) (z * sizeofplane + (y + j) * bps + (x + i) * bpp + 3);
                                         rawData[offset] = alphas[bits & 0x07];
                                     }
-                                    bits >> = 3;
+                                    bits >>= 3;
                                 }
                             }
                         }
