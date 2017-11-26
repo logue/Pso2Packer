@@ -13,10 +13,7 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ヘッダー ファイル\ice">
-      <UniqueIdentifier>{0f8f1962-292e-49ae-95d6-68df79b6c2f0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\ice">
+    <Filter Include="ice">
       <UniqueIdentifier>{b04c5554-0d9e-4026-ac81-109d7ff9130e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -49,16 +46,16 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="..\repacker_ice\clBlowFish.h">
-      <Filter>ヘッダー ファイル\ice</Filter>
+      <Filter>ice</Filter>
     </ClInclude>
     <ClInclude Include="..\repacker_ice\clCompress.h">
-      <Filter>ヘッダー ファイル\ice</Filter>
+      <Filter>ice</Filter>
     </ClInclude>
     <ClInclude Include="..\repacker_ice\clCRC.h">
-      <Filter>ヘッダー ファイル\ice</Filter>
+      <Filter>ice</Filter>
     </ClInclude>
     <ClInclude Include="..\repacker_ice\clICE.h">
-      <Filter>ヘッダー ファイル\ice</Filter>
+      <Filter>ice</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -75,16 +72,16 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="..\repacker_ice\clBlowFish.cpp">
-      <Filter>ソース ファイル\ice</Filter>
+      <Filter>ice</Filter>
     </ClCompile>
     <ClCompile Include="..\repacker_ice\clCompress.cpp">
-      <Filter>ソース ファイル\ice</Filter>
+      <Filter>ice</Filter>
     </ClCompile>
     <ClCompile Include="..\repacker_ice\clCRC.cpp">
-      <Filter>ソース ファイル\ice</Filter>
+      <Filter>ice</Filter>
     </ClCompile>
     <ClCompile Include="..\repacker_ice\clICE.cpp">
-      <Filter>ソース ファイル\ice</Filter>
+      <Filter>ice</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
