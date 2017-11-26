@@ -1,6 +1,6 @@
 ﻿# Pso2Packer
 
-[![Build status](https://ci.appveyor.com/api/projects/status/n8o73hgyoy7rn9ep?svg=true)](https://ci.appveyor.com/project/logue/pso2packer)
+[![Build status](https://ci.appveyor.com/api/projects/status/y7igdk3095jljal3?svg=true)](https://ci.appveyor.com/project/logue/pso2packer)
 
 PSO2のクライアントで読み込めるICE形式のファイルを、開いたり作成したりするためのプログラム。
 
@@ -11,7 +11,7 @@ PSO2のクライアントで読み込めるICE形式のファイルを、開い�
 |repacker_ice   |オリジナルのソースコード（ネットから拾った）
 |IceResource    |ICE形式のファイルをやり取りするためのコアDLL（の予定）
 |IceResource.net|上記のDLLを.netから使用するためのラッパーDLL（の予定）
-|IceBrowser     |[MabiPacker](../MabiPack)のPackViewerの移植（の予定）
+|IceBrowser     |[MabiPacker](../../MabiPack)のPackViewerの移植（の予定）
 
 ## Contribution
 
