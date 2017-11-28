@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
     xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls" 
     xmlns:WPFHexaEditor="clr-namespace:WpfHexaEditor;assembly=WPFHexaEditor"
-    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks" GlowBrush="{StaticResource AccentColorBrush}" NonActiveGlowBrush="{StaticResource ControlsValidationBrush}" ShowIconOnTitleBar="True" Title="IceBrowser" Height="350" Width="525">
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks" GlowBrush="{StaticResource AccentColorBrush}" NonActiveGlowBrush="{StaticResource ControlsValidationBrush}" ShowIconOnTitleBar="True" Title="IceBrowser" Height="350" Width="525" Icon="kohri.ico">
     <Controls:MetroWindow.RightWindowCommands>
         <Controls:WindowCommands ShowLastSeparator="False">
             <Button x:Name="Button_About">
@@ -43,13 +43,17 @@
         <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Width="5" BorderThickness="1,0,1,0" BorderBrush="{StaticResource ResourceKey=AccentColorBrush2}" Background="{StaticResource ResourceKey=AccentColorBrush4}"/>
         <WrapPanel Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">
             <StackPanel x:Name="PicturePanel" Visibility="Collapsed">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="Resource/bg.png" TileMode="Tile" Stretch="None"/>
+                </StackPanel.Background>
                 <Image x:Name="PictureView"/>
             </StackPanel>
             <Button x:Name="SoundView" Visibility="Collapsed" Style="{DynamicResource MahApps.Metro.Styles.MetroCircleButtonStyle}" Width="64" Height="64">
                 <iconPacks:PackIconFontAwesome Kind="Play" Width="36" Height="36"/>
             </Button>
-            <DocumentViewer x:Name="TextView" Visibility="Collapsed" />
+            <DocumentViewer x:Name="TextView" />
             <WPFHexaEditor:HexEditor
+                 Visibility="Collapsed"
                 BorderThickness="0"
                 Width="Auto"
                 x:Name="HexView"
