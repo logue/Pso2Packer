@@ -1,6 +1,6 @@
 # repacker_ice
 
-v1.30
+v1.3.1
 
 ## ICEファイル(.ice)の展開方法
 

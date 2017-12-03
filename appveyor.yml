@@ -7,5 +7,8 @@ build:
   verbosity: minimal
 artifacts:
 - path: \Release\repacker_ice\*
-  name: repacker_ice.$(GitVersion_LegacySemVerPadded)
-  type: zip
+  name: repacker_ice
+- path: \Release\IceBrowser\*
+  name: IceBrowser
+- path: \Release\IceBrowser\**\*
+  name: IceBrowser

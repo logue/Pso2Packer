@@ -1,6 +1,6 @@
 # repacker_ice
 
-ver. 1.30
+ver. 1.3.1
 
 This file was translated by Aida Enna. Thank you very much.
 

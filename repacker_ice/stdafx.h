@@ -4,8 +4,6 @@
 #pragma once
 #define WIN32_LEAN_AND_MEAN
 
-#include "targetver.h"
-
 // Windows ヘッダー ファイル:
 #include <windows.h>
 #include <winternl.h>
@@ -18,6 +16,8 @@
 #include <stdlib.h>
 
 #include <iostream>
+
+#include "targetver.h"
 
 // Macro
 #ifndef _countof
@@ -36,9 +36,11 @@ inline unsigned int bswap(unsigned int v) {
          (v >> 0x18);
 }
 
-// Version
+#define VERSION_MAJOR 1
+#define VERSION_MINOR 3
+#define VERSION_BUILD 1
+#define VERSION_REVISION 1
 
-#define VERSION "1.31"
 #define LIST_FILENAME "FileList.txt"
 #define ICE_VERSION 4
 #define CRYPT_KEY 0xCD50379E
