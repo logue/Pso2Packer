@@ -118,14 +118,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Ice\Arrays.cs" />
-    <Compile Include="Ice\clBlowFish.cs" />
-    <Compile Include="Ice\clCompress.cs" />
-    <Compile Include="Ice\clCRC.cs" />
-    <Compile Include="Ice\clICE.cs" />
-    <Compile Include="Ice\DefineConstants.cs" />
-    <Compile Include="Ice\GlobalMembers.cs" />
-    <Compile Include="Ice\StringFunctions.cs" />
     <Compile Include="Utility.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
