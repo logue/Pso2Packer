@@ -10,4 +10,5 @@ if "%~1" == "" (
 echo:
 "%~dp0ice.exe" -a -c -g 2 -s "%~dp0GroupList.txt" -o "%~dp0%~n1.ice" %*
 echo:
+certutil -hashfile "%~dp0%~n1.ice" MD5
 pause
