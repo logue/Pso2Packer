@@ -6,36 +6,13 @@
 
 // 拡張子は「.」も含めて指定してください。
 // Include "." in the file extension.
-.acb
-.bti
-.cml
-.cmo
-.cmp
-.cms
-.cmt
-.cmx
-.crbp
 .crc
-.emi
-.evt
-.fig
-.flte
 .ini
-.lat
-.light
 .lua
-.lve
-.mus
-.pha
-.phi
-.pgd
-.prm
-.rgn
-.sib
-.skit
-.snd
-.trm
-.trn
+.cml
+.cmp
+.wtr
+.light
 
 // ファイル名を指定することもできます。
 // You can also specify a filename.
