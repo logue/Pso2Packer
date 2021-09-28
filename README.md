@@ -1,4 +1,6 @@
-﻿# Pso2Packer
+※このプロジェクトは、[NgsPacker](https://github.com/logue/NgsPacker)として作り直すことになりました。
+
+ # Pso2Packer
 
 [![Build status](https://ci.appveyor.com/api/projects/status/y7igdk3095jljal3?svg=true)](https://ci.appveyor.com/project/logue/pso2packer)
 
